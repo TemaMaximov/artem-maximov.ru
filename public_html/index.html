@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artem Maximov</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./images/A_logo.png">
     <script src="script.js"></script>
 </head>
-
 <body>
     <header>
         <div class="container header_container">
             <div class="header_logo">
                 Артём Максимов
-                <!--<img class="artem_maximov_logo" alt="Артём Максимов" src="images/artem_maximov_logo.png">-->
             </div>
             <div class="social-links">
                 <a href="https://github.com/TemaMaximov" target="_blank"><i class="fab fa-github"></i></a>
@@ -24,13 +22,46 @@
                 <a href="mailto:artmaxrom@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
             </div>
             <div class="section-links">
-                <a href="#about">Обо мне</a>
-                <a href="#skills">Скиллы</a>
-                <a href="#projects">Проекты</a>
                 <a href="#experience">Опыт</a>
+                <a href="#about">Обо мне</a>
+                <button class="contact-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Свяжитесь со мной</a>
             </div>
         </div>
     </header>
+    <div class="main-image">
+        <img src="./images/background.jpeg">
+    </div>
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Опыт работы/Образование</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-logo">
+                            <img src="./images/Intelsib_logo.png">    
+                        </div>
+                        <div class="timeline-text">
+                            <div class="timeline-date">2024 - н.в.</div>
+                            <h3 class="timeline-title">Веб-аналитик</h3>
+                            <p>Настройка АБ-тестов, верстка по макетам, работа с CMS Bitrix, Wordpress, Tilda и д.р.. Работа с Яндекс Метрикой, Google Analitics и Google Tag Manager.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-logo">
+                            <img src="./images/nstu_logo.jpeg">    
+                        </div>
+                        <div class="timeline-text">
+                            <div class="timeline-date">2020 - 2025</div>
+                            <h3 class="timeline-title">Высшее образование, специалитет</h3>
+                            <p>Закончил специалитет по специальности "Информационная безопасность автоматизированных систем".</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="about">
         <div class="container">
             <h2 class="section-title">Обо мне</h2>
@@ -39,110 +70,19 @@
                     <img src="images/artem_photo.jpg">
                 </div>
                 <div class="about-text">
-                    <p>Привет! Меня зовут Артём и я хочу стать frontend-разработчиком. Для этого я активно изучаю язык
-                        программирования javascript, в частности библиотеку React.js, а также пишу pet-проекты. Я люблю
-                        программировать, решать сложные задачи и создавать качественные продукты, которые приносят
-                        пользу.</p>
-                    <p>Сейчас я работаю веб-аналитиком в Intelsib — компании, занимающейся интернет-маркетингом. Я
+                    <p>Привет! Меня зовут Артём и я работаю веб-аналитиком в Intelsib — компании, занимающейся интернет-маркетингом. Я
                         настраиваю отслеживание действий пользователей на сайтах с помощью Яндекс Метрики, Google
-                        Analitics и Gootle Tag Manager, а также провожу A/B-тесты на сайтах. В моей работе мне требуются
+                        Analitics и Gootle Tag Manager, а также провожу A/B-тесты. В моей работе мне требуются
                         знания html, css и javascript.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="projects">
-        <div class="container">
-            <h2 class="section-title">Проекты</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-img">
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">Интернет-магазин</h3>
-                        <p class="project-description">Полнофункциональный интернет-магазин с системой оплаты и
-                            админ-панелью.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                        </div>
-                        <a href="#" class="btn">Подробнее</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">Аналитическая панель</h3>
-                        <p class="project-description">Панель управления с графиками и аналитикой для бизнес-метрик.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">D3.js</span>
-                            <span class="tech-tag">Express</span>
-                        </div>
-                        <a href="#" class="btn">Подробнее</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">Мобильное приложение</h3>
-                        <p class="project-description">Кроссплатформенное мобильное приложение для управления задачами.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React Native</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">Redux</span>
-                        </div>
-                        <a href="#" class="btn">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="experience">
-        <div class="container">
-            <h2 class="section-title">Опыт работы</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2020 - настоящее время</div>
-                        <h3 class="timeline-title">Senior Full-stack Developer</h3>
-                        <p>Tech Solutions Inc.</p>
-                        <p>Разработка и поддержка веб-приложений, руководство командой разработчиков, внедрение новых
-                            технологий.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2018 - 2020</div>
-                        <h3 class="timeline-title">Frontend Developer</h3>
-                        <p>Digital Agency "WebStyle"</p>
-                        <p>Создание пользовательских интерфейсов, работа с React, оптимизация производительности.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2016 - 2018</div>
-                        <h3 class="timeline-title">Junior Web Developer</h3>
-                        <p>StartUp Company</p>
-                        <p>Разработка веб-сайтов, верстка по макетам, работа с CMS.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="contact">
         <div class="container">
             <h2 class="section-title">Свяжитесь со мной</h2>
             <div class="contact-form">
-                <form>
+                <form id="feedback">
                     <div class="form-group">
                         <label for="name">Имя</label>
                         <input type="text" id="name" class="form-control" required>
@@ -155,7 +95,7 @@
                         <label for="message">Сообщение</label>
                         <textarea id="message" class="form-control" required></textarea>
                     </div>
-                    <button type="submit" class="btn">Отправить сообщение</button>
+                    <button class="contact-button" type="submit" class="btn">Отправить сообщение</button>
                 </form>
             </div>
         </div>
